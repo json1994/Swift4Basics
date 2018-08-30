@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 
-  s.source_files  = "Swift4Basics", "Swift4Basics/**/*.{h,m}"
+s.source_files  = "Swift4Basics/*.{h,m}", "Swift4Basics/**/*.{h,m}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -58,18 +58,18 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
  s.pod_target_xcconfig = {
- 'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => '$(PODS_ROOT)/Swift3Basics/CommonCrypto/iphoneos',
- 'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => '$(PODS_ROOT)/Swift3Basics/CommonCrypto/iphonesimulator'
+ 'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => '$(PODS_ROOT)/Swift4Basics/CommonCrypto/iphoneos',
+ 'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => '$(PODS_ROOT)/Swift4Basics/CommonCrypto/iphonesimulator'
  }
 
-s.dependency 'SwiftyJSON','>=4.0.0'
-s.dependency 'KeychainSwift','>=10.0.0'
-s.dependency 'ObjectMapper','>= 3.1.0'
-s.dependency 'RealmSwift', '>=3.3.0'
-s.dependency 'Realm', '>=3.3.0'
-s.dependency 'Alamofire','>=4.7.0'
-s.dependency 'AlamofireObjectMapper'   , '>= 5.0.0'
-s.dependency 'Kingfisher', '>= 4.0'
-s.dependency 'ReachabilitySwift','>= 4.0.0'
+s.dependency 'SwiftyJSON' #,'>=4.0.0'
+s.dependency 'KeychainSwift' #,'>=10.0.0'
+s.dependency 'ObjectMapper' #,'>= 3.1.0'
+s.dependency 'RealmSwift' #, '>=3.3.0'
+s.dependency 'Realm' #, '>=3.3.0'
+s.dependency 'Alamofire' #,'>=4.7.0'
+s.dependency 'AlamofireObjectMapper'   #, '>= 5.0.0'
+s.dependency 'Kingfisher' #, '>= 4.0'
+s.dependency 'ReachabilitySwift' #,'>= 4.0.0'
 
 end

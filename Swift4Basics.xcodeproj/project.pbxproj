@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CBF303462B4C27DD67241F2 /* Pods_Swift4Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCD6ECAE9D79925F4AA883D /* Pods_Swift4Basics.framework */; };
+		CD089C2121381F5E009F0204 /* Swift4Basics.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CD089C2021381F5E009F0204 /* Swift4Basics.podspec */; };
 		CDE8D5E2208591F1007D9C22 /* Swift4Basics.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE8D5E0208591F1007D9C22 /* Swift4Basics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDE8D61520859274007D9C22 /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8D5E920859273007D9C22 /* UIView+Toast.swift */; };
 		CDE8D61620859274007D9C22 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8D5EA20859273007D9C22 /* UIColor+Extension.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		3CCD6ECAE9D79925F4AA883D /* Pods_Swift4Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift4Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FB2E1ECAB2DAA78DC6CD20 /* Pods-Swift4Basics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift4Basics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift4Basics/Pods-Swift4Basics.release.xcconfig"; sourceTree = "<group>"; };
+		CD089C2021381F5E009F0204 /* Swift4Basics.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift4Basics.podspec; sourceTree = "<group>"; };
 		CDE8D5DD208591F1007D9C22 /* Swift4Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift4Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE8D5E0208591F1007D9C22 /* Swift4Basics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift4Basics.h; sourceTree = "<group>"; };
 		CDE8D5E1208591F1007D9C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		CDE8D5D3208591F1007D9C22 = {
 			isa = PBXGroup;
 			children = (
+				CD089C2021381F5E009F0204 /* Swift4Basics.podspec */,
 				CDE8D5DF208591F1007D9C22 /* Swift4Basics */,
 				CDE8D5DE208591F1007D9C22 /* Products */,
 				2061369A1DD96E47FBED5CCD /* Pods */,
@@ -320,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD089C2121381F5E009F0204 /* Swift4Basics.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
