@@ -35,13 +35,13 @@ Pod::Spec.new do |s|
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 
-  s.source = { :git => "https://github.com/hw3308/Swift4Basics.git", :tag => "#{s.version}" }
+  s.source = { :git => "https://github.com/hw3308/Swift4Basics", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 
-s.source_files  = "Swift4Basics/*.{h,m}", "Swift4Basics/**/*.{h,m}"
+s.source_files  = "Swift4Basics","Swift4Basics/*.{h,m}", "Swift4Basics/**/*.{h,m}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
