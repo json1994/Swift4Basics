@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 
-s.source_files  = "Swift4Basics","Swift4Basics/*.{h,m}", "Swift4Basics/**/*.{h,m}"
+s.source_files  = "Swift4Basics","Swift4Basics/*.{h,m}", "Swift4Basics/**/*.{h,m}","Swift4Basics/**/*.swift"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
