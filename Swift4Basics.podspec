@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Swift4Basics"
-  s.version      = "1.0.1"
+  s.version      = "0.0.1"
   s.summary      = "Swift4.0 Basics"
 
   s.description  = <<-DESC
