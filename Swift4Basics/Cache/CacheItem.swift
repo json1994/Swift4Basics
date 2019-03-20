@@ -15,11 +15,11 @@ import ObjectMapper
 
 open class CacheItem: Object {
     
-    var key: String?
+    @objc dynamic var key: String?
     
-    var value: String?
+    @objc dynamic var value: String?
     
-    var expires: Double = 0.0
+    @objc dynamic var expires: Double = 0.0
     
     // 主键
     override open static func primaryKey() -> String? {

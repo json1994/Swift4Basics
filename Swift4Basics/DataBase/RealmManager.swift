@@ -18,8 +18,8 @@ extension Realm {
     fileprivate static var _sharedRealm: Realm!
     
     public static var sharedRealm: Realm {
-        if _sharedRealm == nil {
-            _sharedRealm = try! Realm(fileURL: NSURL(string:"\(rootPath)/shared.realm")! as URL)
+        if _sharedRealm == nil{
+            _sharedRealm = try? Realm()
         }
         return _sharedRealm
     }
@@ -45,13 +45,14 @@ extension Realm {
     
     public static func setUerRealmWithString(_ idOrName:String){
         
-        _userRealm = try! Realm(fileURL: NSURL(string:"\(rootPath)/\(idOrName).realm")! as URL)
+        let path = "\(rootPath)/\(idOrName).realm"
+        if let url = URL.init(string: path){
+            _userRealm = try? Realm.init(fileURL: url)
+        }
     }
     
     public static func resetUserRealm() {
         _userRealm = nil
     }
-    
-
 }
 
