@@ -4,23 +4,23 @@ use_frameworks!
 
 target:Swift4Basics do
     
-  pod 'Realm', '>=3.3.0'
+    pod 'Realm'
 
-  pod 'RealmSwift', '>= 3.3.0'
+    pod 'RealmSwift'
 
-  pod 'Alamofire','>=4.7.0'
+    pod 'Alamofire'
 
-  pod 'AlamofireObjectMapper'   , '>= 5.0.0'
+    pod 'AlamofireObjectMapper'
 
-  pod 'SwiftyJSON','>=4.0.0'
+    pod 'SwiftyJSON'
 
-  pod 'KeychainSwift','>=10.0.0'
+    pod 'KeychainSwift'
 
-  pod 'ObjectMapper','>= 3.1.0'
+    pod 'ObjectMapper'
 
-  pod 'ReachabilitySwift','>= 4.0.0'
+    pod 'ReachabilitySwift'
 
-  pod 'Kingfisher', '>= 4.0'
+    pod 'Kingfisher'
 
 end
 

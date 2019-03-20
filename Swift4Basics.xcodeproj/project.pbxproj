@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0CBF303462B4C27DD67241F2 /* Pods_Swift4Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCD6ECAE9D79925F4AA883D /* Pods_Swift4Basics.framework */; };
 		CD089C2121381F5E009F0204 /* Swift4Basics.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CD089C2021381F5E009F0204 /* Swift4Basics.podspec */; };
+		CD2EF809224207FE004AACBE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2EF808224207FE004AACBE /* CoreFoundation.framework */; };
 		CDE8D5E2208591F1007D9C22 /* Swift4Basics.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE8D5E0208591F1007D9C22 /* Swift4Basics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDE8D61520859274007D9C22 /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8D5E920859273007D9C22 /* UIView+Toast.swift */; };
 		CDE8D61620859274007D9C22 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8D5EA20859273007D9C22 /* UIColor+Extension.swift */; };
@@ -53,6 +54,9 @@
 		3CCD6ECAE9D79925F4AA883D /* Pods_Swift4Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift4Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FB2E1ECAB2DAA78DC6CD20 /* Pods-Swift4Basics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift4Basics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift4Basics/Pods-Swift4Basics.release.xcconfig"; sourceTree = "<group>"; };
 		CD089C2021381F5E009F0204 /* Swift4Basics.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift4Basics.podspec; sourceTree = "<group>"; };
+		CD2EF808224207FE004AACBE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CD6D55AA215BB840003081B3 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		CD6D55AC215BB840003081B3 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		CDE8D5DD208591F1007D9C22 /* Swift4Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift4Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE8D5E0208591F1007D9C22 /* Swift4Basics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift4Basics.h; sourceTree = "<group>"; };
 		CDE8D5E1208591F1007D9C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2EF809224207FE004AACBE /* CoreFoundation.framework in Frameworks */,
 				0CBF303462B4C27DD67241F2 /* Pods_Swift4Basics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,9 +122,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CD6D55A8215BB840003081B3 /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				CD6D55A9215BB840003081B3 /* iphoneos */,
+				CD6D55AB215BB840003081B3 /* iphonesimulator */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		CD6D55A9215BB840003081B3 /* iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				CD6D55AA215BB840003081B3 /* module.modulemap */,
+			);
+			path = iphoneos;
+			sourceTree = "<group>";
+		};
+		CD6D55AB215BB840003081B3 /* iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				CD6D55AC215BB840003081B3 /* module.modulemap */,
+			);
+			path = iphonesimulator;
+			sourceTree = "<group>";
+		};
 		CDE8D5D3208591F1007D9C22 = {
 			isa = PBXGroup;
 			children = (
+				CD6D55A8215BB840003081B3 /* CommonCrypto */,
 				CD089C2021381F5E009F0204 /* Swift4Basics.podspec */,
 				CDE8D5DF208591F1007D9C22 /* Swift4Basics */,
 				CDE8D5DE208591F1007D9C22 /* Products */,
@@ -249,6 +280,7 @@
 		F80561C8C59A8E767F8676CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD2EF808224207FE004AACBE /* CoreFoundation.framework */,
 				3CCD6ECAE9D79925F4AA883D /* Pods_Swift4Basics.framework */,
 			);
 			name = Frameworks;
@@ -544,7 +576,7 @@
 				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = CommonCrypto/iphoneos;
 				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = CommonCrypto/iphonesimulator;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -574,7 +606,7 @@
 				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = CommonCrypto/iphoneos;
 				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = CommonCrypto/iphonesimulator;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
