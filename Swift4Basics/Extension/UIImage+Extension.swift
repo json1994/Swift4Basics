@@ -15,9 +15,9 @@ extension UIImage {
     public var data: Data? {
         switch contentType {
         case .jpeg:
-            return UIImageJPEGRepresentation(self, 1)
+            return self.jpegData(compressionQuality: 1)
         case .png:
-            return UIImagePNGRepresentation(self)
+            return self.pngData()
             //case .GIF:
         //return UIImageAnimatedGIFRepresentation(self)
         default:
@@ -110,9 +110,9 @@ extension UIImage {
                 //if let _ = UIImageAnimatedGIFRepresentation(self) {
                 //result = .GIF
                 //} else
-                if let _ = UIImageJPEGRepresentation(self, 1) {
+                if let _ = self.jpegData(compressionQuality: 1) {
                     result = .jpeg
-                } else if let _ = UIImagePNGRepresentation(self) {
+                } else if let _ = self.pngData() {
                     result = .png
                 } else {
                     result = .unknown
