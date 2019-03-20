@@ -57,11 +57,6 @@ s.source_files  = "Swift4Basics","Swift4Basics/*.{h,m}", "Swift4Basics/**/*.{h,m
 
   s.requires_arc = true
 
- s.pod_target_xcconfig = {
- 'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => '$(PODS_ROOT)/Swift4Basics/CommonCrypto/iphoneos',
- 'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => '$(PODS_ROOT)/Swift4Basics/CommonCrypto/iphonesimulator'
- }
-
 s.dependency 'SwiftyJSON'
 s.dependency 'KeychainSwift'
 s.dependency 'ObjectMapper'
