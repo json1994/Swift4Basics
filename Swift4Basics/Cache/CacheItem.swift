@@ -22,7 +22,7 @@ open class CacheItem: Object {
     @objc dynamic var expires: Double = 0.0
     
     // 主键
-    override open static func primaryKey() -> String? {
+    override public static func primaryKey() -> String? {
         return "key"
     }
     

@@ -735,7 +735,7 @@ open class ToastManager {
     /**
      The `ToastManager` singleton instance.
      */
-    open static let shared = ToastManager()
+    public static let shared = ToastManager()
 
     /**
      The shared style. Used whenever toastViewForMessage(message:title:image:style:) is called

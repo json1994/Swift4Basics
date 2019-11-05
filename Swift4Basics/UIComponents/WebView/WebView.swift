@@ -17,7 +17,7 @@ open class WebView: UIView {
     
     fileprivate static var _userAgent: String!
     
-    open static var userAgent: String {
+    public static var userAgent: String {
         if _userAgent == nil {
             _userAgent = UIWebView().stringByEvaluatingJavaScript(from: "navigator.userAgent") ?? ""
         }
@@ -27,8 +27,8 @@ open class WebView: UIView {
         return ua
     }
     
-    open static var defaultProcessPool = WKProcessPool()
-    open static var defaultConfiguration: WKWebViewConfiguration {
+    public static var defaultProcessPool = WKProcessPool()
+    public static var defaultConfiguration: WKWebViewConfiguration {
         let config = WKWebViewConfiguration()
         config.processPool = defaultProcessPool
         config.userContentController = UserContentController()

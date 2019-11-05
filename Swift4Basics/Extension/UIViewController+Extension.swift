@@ -110,11 +110,6 @@ extension UIViewController {
             UIView.commitAnimations()
         }
     }
-    
-    /// 显示/隐藏 NavigationBar
-    public func setNavigationBarHidden(_ hidden: Bool, animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(hidden, animated: animated)
-    }
 }
 
 // MARK: Storyboard

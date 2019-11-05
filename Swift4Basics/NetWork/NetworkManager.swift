@@ -11,11 +11,11 @@ import Alamofire
 import Kingfisher
 
 open class NetworkManager {
-    open static var defaultManager: Alamofire.SessionManager!
+    public static var defaultManager: Alamofire.SessionManager!
     
-    open static let sharedCookieStorage = HTTPCookieStorage.shared
+    public static let sharedCookieStorage = HTTPCookieStorage.shared
     
-    open static func initNetworkManager(sserverTrustPolicie serverTrustPolicies: [String: ServerTrustPolicy]? = nil) {
+    public static func initNetworkManager(sserverTrustPolicie serverTrustPolicies: [String: ServerTrustPolicy]? = nil) {
         
         SwiftURLCache.activate()
         

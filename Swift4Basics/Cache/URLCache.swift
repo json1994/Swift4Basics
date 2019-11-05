@@ -12,10 +12,10 @@ import Reachability
 
 open class SwiftURLCache: URLCache {
     
-    open static var cacheFolder = "URLCache" // The folder in the Documents folder where cached files will be saved
-    open static var memoryCapacity:Int = 16 * 1024 * 1024 // The maximum memory size that will be cached
-    open static var diskCapacity:Int = 256 * 1024 * 1024 // The maximum file size that will be cached
-    open static var filter: (_ request: URLRequest) -> Bool = { _ in return true }
+    public static var cacheFolder = "URLCache" // The folder in the Documents folder where cached files will be saved
+    public static var memoryCapacity:Int = 16 * 1024 * 1024 // The maximum memory size that will be cached
+    public static var diskCapacity:Int = 256 * 1024 * 1024 // The maximum file size that will be cached
+    public static var filter: (_ request: URLRequest) -> Bool = { _ in return true }
     
     fileprivate static var cacheDirectory: String!
     
@@ -46,7 +46,7 @@ open class SwiftURLCache: URLCache {
             return nil
         }
         
-        if request.cachePolicy == .reloadIgnoringCacheData && !(Reachability()?.connection != .none) || absoluteString.hasPrefix("file:") || absoluteString.hasPrefix("data:") {
+        if request.cachePolicy == .reloadIgnoringCacheData && !(try! Reachability().connection != .unavailable) || absoluteString.hasPrefix("file:") || absoluteString.hasPrefix("data:") {
             Log.warn("CACHE not allowed for \(url)")
             return nil
         }
